@@ -1,3 +1,8 @@
+let timer=60;
+
+
+
+
 function makeBubble() {
     clutter='';
 for(let i = 1; i <= 180; i++){
@@ -11,4 +16,20 @@ for(let i = 1; i <= 180; i++){
 document.querySelector("#panelBottom").innerHTML=clutter;
 }
 
+
+function runTimer(){
+        let timerEnd = setInterval(function(){
+           
+           if(timer>0){
+            timer-- ;
+            document.querySelector("#timerVal").textContent = timer;
+           } 
+           else {clearInterval(timerEnd);}
+
+                },1000 );        
+        
+}
+
+
+runTimer();
 makeBubble();

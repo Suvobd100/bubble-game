@@ -10,11 +10,11 @@
 }
 
 html,body{
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     font-family: "Mansalva", sans-serif;
 }
-
+/* 
 #main{
     width: 100%;
     height: 100%;
@@ -23,18 +23,18 @@ html,body{
     align-items: center;
     justify-content: center;
 
-}
-
-#panel{
+} */
+/* 
+#panel {
     width: 80%;
     height: 80%;
     background-color: rgb(232, 220, 220);
     border-radius: 10px;
     overflow: hidden;
-}
-
+} */
+/* 
 #ptop{
     width: 100%;
     height: 100px;
     background-color: silver;
-}
+} */

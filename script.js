@@ -1,4 +1,4 @@
-let timer=10;
+let timer=60;
 let score=0;
 let ntNum = 0;
 
@@ -37,13 +37,15 @@ function runTimer(){
            } 
            else {clearInterval(timerEnd);
             document.querySelector('#panelBottom')
-            .innerHTML=`<h1 class='text-5xl items-center text-red-500'>Game Over</h1>`;
+            .innerHTML=`<div class='text-6xl text-red-500 flex justify-center items-center mx-auto'>Game Over</div>`;
+
+            document.querySelector('#hit-Number').innerHTML= 0;
 
                     }
 
-                },1000 );        
-        
+               },1000 );              
 }
+
 
 
 document.querySelector('#panelBottom')
@@ -53,9 +55,11 @@ document.querySelector('#panelBottom')
         hitScore()
         makeBubble()
         newTargetNumber()
+    
     }
     // console.log(ntNum);
 })
+
 runTimer();
 makeBubble();
 newTargetNumber()

@@ -1,7 +1,16 @@
 let timer=60;
+let score=0;
+function hitScore(){
+    score += 2.5;
+    document.querySelector('#Hit-Score').textContent=score;
+}
 
 
-
+function newTargetNumber(){
+    let ntNum = Math.floor(Math.random()*10)
+    // console.log(ntNum);
+    document.querySelector('#hit-Number').textContent=ntNum
+}
 
 function makeBubble() {
     clutter='';
@@ -15,7 +24,6 @@ for(let i = 1; i <= 180; i++){
 
 document.querySelector("#panelBottom").innerHTML=clutter;
 }
-
 
 function runTimer(){
         let timerEnd = setInterval(function(){
@@ -33,3 +41,6 @@ function runTimer(){
 
 runTimer();
 makeBubble();
+newTargetNumber()
+
+
